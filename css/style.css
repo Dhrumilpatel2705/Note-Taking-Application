@@ -1,0 +1,197 @@
+:root {
+    --color: #3498db;
+}
+
+.navbar {
+    background: var(--color);
+}
+
+
+header span {
+    float: right;
+    line-height: 40px;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #2c3e50;
+}
+
+header span:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+
+header span:hover ul {
+    display: block;
+}
+
+header span ul {
+    background: var(--color);
+    width: 60px;
+    position: fixed;
+    right: 10px;
+    top: 40px;
+    border-radius: 0 0 10px 10px;
+    display: none;
+}
+
+.color {
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    margin: 17px -17px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#blue {
+    background: #3498db;
+}
+
+#red {
+    background: #e74c3c;
+}
+
+#purple {
+    background: #9b59b6;
+}
+
+#yellow {
+    background: #f1c40f;
+}
+
+#orange {
+    background: #e67e22;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navbar-brand {
+    /* color: rgb(0, 0, 0); */
+    display: block;
+    transition: .5s;
+}
+
+.navbar-nav:hover .navbar-brand{
+    filter: blur(5px);
+}
+
+.navbar-nav .navbar-brand:hover {
+    /* color: rgb(255, 255, 255); */
+    filter: blur(0px);
+}
+
+
+
+.cardTitle input {
+    width: 100%;
+    padding: 15px 25px;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+
+.cardTitle {
+    margin-bottom: 2em;
+}
+
+li {
+    margin: 0 5px;
+}
+
+.fa-github {
+    font-size: 40px;
+}
+
+#dev {
+    font-size: 30px;
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#dev:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+    transform: none;
+}
+
+.btn {
+    background: var(--color);
+    color: aliceblue;
+    border: none;
+}
+
+
+.btn:hover {
+    background-color: rgb(7, 127, 7);
+}
+
+.aaa {
+    text-decoration: none;
+    color: black;
+}
+
+.aaa:hover {
+    color: black;
+}
+
+.card h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.abc {
+    margin-bottom: 20px;
+}
+
+.container {
+    background: #f4f4f4;
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid var(--color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 var(--color), 0 6px 20px 0 var(--color);
+}
+
+.container h2 {
+    padding: 20px;
+    color: var(--color);
+}
+
+.container h5 {
+    color: var(--color);
+}
+
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    #dev {
+        font-size: 20px;
+    }
+
+    .fa-github {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+
+    .card h2 {
+        text-align: center;
+        justify-content: center;
+    }
+    
+}
